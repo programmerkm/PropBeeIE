@@ -1,0 +1,198 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""PropBeeIE.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Tool to track property changes made on rightmove.co.uk"
+            VALUE "CompanyName", "PropertySpy"
+            VALUE "FileDescription", "PropertySpy"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PropBeeIE.dll"
+            VALUE "LegalCopyright", "(c) ReadingRabbit.  All rights reserved."
+            VALUE "OriginalFilename", "PropBeeIE.dll"
+            VALUE "ProductName", "PropertySpy"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_PROPBEEIE           REGISTRY                "PropBeeIE.rgs"
+IDR_PROPBEE             REGISTRY                "PropBee.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_EA_PNG              PNG                     "H:\\Icons\\kuser32.png"
+IDR_KEYS_PNG            PNG                     "H:\\Icons\\Keys32.png"
+IDR_CONNECTION_PNG      PNG                     "H:\\Icons\\Internet Connection Tools32.png"
+IDR_GREENUP_PNG         PNG                     "H:\\Icons\\GreenButton_UpArrow32.png"
+IDR_REDDOWN_PNG         PNG                     "H:\\Icons\\RedButton_DownArrow32.png"
+IDR_HOMESPY_PNG         PNG                     "H:\\Icons\\Network Security\\PNG\\Regular\\Home Spy\\32x32\\Home Spy.png"
+IDR_HOMESPYDISABLED_PNG PNG                     "H:\\Icons\\Network Security\\PNG\\Disabled\\Home Spy\\32x32\\Home Spy.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMPORTDB_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Welcome to Property Spy"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Next",IDOK,262,176,50,16
+    LTEXT           "Property Spy will now create a database for its use and automatically import any Property Bee history data found on your computer. \r\rPlease press Next to proceed.",IDC_STATIC,36,6,270,36
+    CONTROL         "",IDC_UPDATE_PROGRESS,"msctls_progress32",0x1,19,130,281,10,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_STATIC_UPDATE,21,113,266,8
+    ICON            IDI_ICON_PROPSPY,IDC_STATIC,4,5,21,20,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG_GENERAL DIALOGEX 0, 0, 401, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_APPEARANCE DIALOGEX 0, 0, 401, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Appearance"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Show any changes for:",IDC_STATIC,7,3,387,36
+    CONTROL         "Price",IDC_CHECK_PRICE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,18,34,14
+    CONTROL         "Status",IDC_CHECK_STATUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,59,18,38,14
+    CONTROL         "Title",IDC_CHECK_STATUS3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,18,33,14
+    CONTROL         "Estate Agent details",IDC_CHECK_STATUS2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,18,76,14
+    CONTROL         "Description",IDC_CHECK_STATUS4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,236,18,58,14
+    GROUPBOX        "If the Property Price increases or decreases:",IDC_STATIC,7,52,387,36
+    CONTROL         "Show a UP or DOWN arrow as a quick visual clue.",IDC_CHECK_PRICE2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,66,181,14
+END
+
+IDD_DIALOG_DATA DIALOGEX 0, 0, 401, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Database Management"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Import data from Property Spy database:",IDC_STATIC,7,53,387,84
+    PUSHBUTTON      "Launch the data import wizard",IDC_BUTTON_IMPORT,254,113,133,14
+    LTEXT           "From here you can import history data from another Property Spy database i.e. for example you can get the database from your friend just to keep your Property Spy history up to date.",IDC_STATIC,13,66,375,19
+    LTEXT           "Location of Property Spy database:",IDC_STATIC,10,5,147,8
+    LTEXT           "Location of Property Spy database:",IDC_STATIC_DBNAME,9,17,379,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_PROPSPY        ICON                    "PropSpy.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "PropBeeIE"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "PropBeeIE.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

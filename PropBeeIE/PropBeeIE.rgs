@@ -1,0 +1,46 @@
+HKLM {
+  NoRemove SOFTWARE
+   {
+    NoRemove Microsoft
+     {   
+      NoRemove Windows
+       {
+        NoRemove CurrentVersion
+         {
+          NoRemove Explorer
+           {
+            NoRemove 'Browser Helper Objects'
+             {
+              ForceRemove '{ADCC389F-B74A-4881-B5D5-ABDAF58E646F}' = s 'PropertySpy' {
+                val 'NoExplorer' = d '1'
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+HKLM {
+  NoRemove SOFTWARE
+  {
+    NoRemove Microsoft
+    {
+      NoRemove 'Internet Explorer'
+      {
+        NoRemove Extensions
+        {
+          ForceRemove '{ADCC389F-B74A-4881-B5D5-ABDAF58E646F}'  = s 'PropertySpy' {
+            val 'Default Visible' = s 'yes'
+            val 'ButtonText' = s 'Property Spy'
+            val 'CLSID' = s '{1FBA04EE-3024-11d2-8F1F-0000F87ABD16}'
+            val 'ClsidExtension' = s '{ADCC389F-B74A-4881-B5D5-ABDAF58E646F}'
+            val 'HotIcon' =  s 'c:\PropSpy.ico'
+			val 'Icon' =  s 'c:\PropSpy.ico'
+          }
+        }
+      }
+    }
+  }
+}

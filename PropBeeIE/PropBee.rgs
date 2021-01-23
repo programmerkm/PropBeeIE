@@ -1,0 +1,27 @@
+HKCR
+{
+	PropBeeIE.PropBee.1 = s 'PropBee Class'
+	{
+		CLSID = s '{ADCC389F-B74A-4881-B5D5-ABDAF58E646F}'
+	}
+	PropBeeIE.PropBee = s 'PropBee Class'
+	{
+		CLSID = s '{ADCC389F-B74A-4881-B5D5-ABDAF58E646F}'
+		CurVer = s 'PropBeeIE.PropBee.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {ADCC389F-B74A-4881-B5D5-ABDAF58E646F} = s 'PropBee Class'
+		{
+			ProgID = s 'PropBeeIE.PropBee.1'
+			VersionIndependentProgID = s 'PropBeeIE.PropBee'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{CA68A053-2505-4010-AD3A-D42A7BDD3DB7}'
+		}
+	}
+}

@@ -1,0 +1,36 @@
+// PropBeeIE.idl : IDL source for PropBeeIE
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (PropBeeIE.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(738BD3F6-AB09-4DEE-A07D-E55659B64163),
+	dual,
+	nonextensible,
+	helpstring("IPropBee Interface"),
+	pointer_default(unique)
+]
+interface IPropBee : IDispatch{
+};
+[
+	uuid(CA68A053-2505-4010-AD3A-D42A7BDD3DB7),
+	version(1.0),
+	helpstring("PropBeeIE 1.0 Type Library")
+]
+library PropBeeIELib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(ADCC389F-B74A-4881-B5D5-ABDAF58E646F),
+		helpstring("PropBee Class")
+	]
+	coclass PropBee
+	{
+		[default] interface IPropBee;
+	};
+};

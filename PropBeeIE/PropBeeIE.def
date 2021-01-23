@@ -1,0 +1,9 @@
+; PropBeeIE.def : Declares the module parameters.
+
+LIBRARY      "PropBeeIE.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

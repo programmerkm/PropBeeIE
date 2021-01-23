@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PropBeeIE", "PropBeeIE\PropBeeIE.vcproj", "{96B1AA85-4733-468A-84E9-70C91F02A66F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PropBeeIEPS", "PropBeeIE\PropBeeIEPS.vcproj", "{5E6AC769-3C38-4236-AD66-1E5FE7BBF083}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96B1AA85-4733-468A-84E9-70C91F02A66F} = {96B1AA85-4733-468A-84E9-70C91F02A66F}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PropertySpySetup", "PropertySpySetup\PropertySpySetup.vdproj", "{7D9774A3-D141-4BB2-A3B8-8966FE5449DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96B1AA85-4733-468A-84E9-70C91F02A66F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{96B1AA85-4733-468A-84E9-70C91F02A66F}.Debug|Win32.Build.0 = Debug|Win32
+		{96B1AA85-4733-468A-84E9-70C91F02A66F}.Release|Win32.ActiveCfg = Release|Win32
+		{96B1AA85-4733-468A-84E9-70C91F02A66F}.Release|Win32.Build.0 = Release|Win32
+		{5E6AC769-3C38-4236-AD66-1E5FE7BBF083}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E6AC769-3C38-4236-AD66-1E5FE7BBF083}.Release|Win32.ActiveCfg = Release|Win32
+		{7D9774A3-D141-4BB2-A3B8-8966FE5449DA}.Debug|Win32.ActiveCfg = Debug
+		{7D9774A3-D141-4BB2-A3B8-8966FE5449DA}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
